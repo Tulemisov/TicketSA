@@ -1,0 +1,242 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket for Sea Activities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'main/css/main.css'%}">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-menu">
+        <a class="navbar-brand pe-5" href="#"><img src="{%  static 'main/img/Logo.png' %}" alt="Логотип"></a>
+        <div class="collapse navbar-collapse ps-5" id="navbarNav">
+            <ul class="navbar-nav fs-4">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#mainSection">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#targetSection">Цели</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#mission">Миссия</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mainSection">
+        <section class="container " id="mainSection">
+            <div>
+                <h1 class="font-h-one">
+                    Онлайн покупка билетов и бронирование<br>Туристических услуг</br>
+                </h1>
+            </div>
+            <div class="btn bg-danger bg-gradient p-4 my-4 fs-3">
+                <a href="#buyTickets">УСПЕЙ КУПИТЬ</a>
+            </div>
+            <div class="Buy">
+                <p>Сколько ещё мы не знаем о море</p>
+            </div>
+        </section>
+    </div>
+    <section>
+        <video id="myVideo" controls autoplay loop>
+            <source src="{% static 'main/video/gorodvideo.mp4' %}" alt="">
+        </video>
+    </section>
+    <section class="container" id="targetSection">
+        <div class="d-flex my-5">
+            <img class="image-target" src="{%  static 'main/img/Astana.png' %}" alt="">
+            <div class="text-target ms-3">
+                <p>Наша цель - развитие туризма в Казахстане. <br>Мы должны показать что у нашем земле есть тоже
+                    исторические места.</br></p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div class="text-target">
+                <p> Развивать в нашей стране сферу туризма.<br> Сделать нашу страну известном по всему миру.</br></p>
+            </div>
+            <img class="image-target" src="{%  static 'main/img/aqtau.png' %}" alt="">
+        </div>
+        <div class="d-flex">
+            <img class="image-target" src="{%  static 'main/img/atyrau.png' %}" alt="">
+            <div class="text-target">
+                <p>Прогулочно-экскурсионный теплоход, который курсирует по маршруту.<br>Оказывает услуги для населения и
+                    гостей города по доступным ценам.</br></p>
+            </div>
+        </div>
+    </section>
+    <marquee scrollamount="15" behavior="scroll" loop="infinite" size="+5">
+        <p class="marquee">TICKET FOR SEA ACTIVITIES TSA TICKET FOR SEA ACTIVITIES TSA TICKET FOR SEA ACTIVITIES TSA
+            TICKET
+            FOR SEA ACTIVITIES TSA TICKET FOR SEA ACTIVITIES TSA TICKET FOR SEA ACTIVITIES TSA TICKET FOR SEA ACTIVITIES
+            TSA
+            TICKET FOR SEA ACTIVITIES TSA</p>
+    </marquee>
+    <div class="mission" id="mission">
+        <section class="container">
+            <div class="card-block fs-5">
+                <div class="top-card d-flex justify-content-between">
+                    <div class="card">
+                        <div class="card-header fs-4 text-center">
+                            Миссия:
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Построение удобной единой системы продажи билетов в Казахстане на развлекательные
+                                услуги,
+                                предлагая покупателям максимально простое и удобное приобретение.<br>А организаторам -
+                                эффективные
+                                способы оказания услуг по продвижению билетов и распространению.</br>
+                                <br>А так же поднимать состояние туризма нашей страны. Наш проект будет работать в тех
+                                районах где есть
+                                речки, море и т.д.</br>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header fs-4 text-center">
+                            Правила посещения борта:
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                На борту обязательное использование спасательного жилета.Без
+                                разрешения капитана нельзя вставать с мест и перемещаться во время хода
+                                катамарана.<br>Использовать
+                                удобную и устойчивую обувь.</br> Запрещено посещать борт с алкогольными напитками.
+                                <br>На борту
+                                запрещается курить. Не оставляйте детей без присмотра. Запрещено выбрасывать мусор за
+                                борт. Купание и
+                                ныряние с катамарана запрещено. <br>За утерю личных вещей Компания не несет
+                                ответственность.</br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-card d-flex justify-content-between mt-5">
+                    <div class="card">
+                        <div class="card-header fs-4 text-center">
+                            О прогулках:
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Стоимость билета на одного человека 1 000 тг.<br>Для детей ниже 120 см – 500
+                                тг.</br><br>Для детей без предоставления места (на руках) – бесплатно.</br> Всем
+                                пассажирам выдают
+                                спасательные жилеты, которые должны быть надеты на пассажирах на протяжении всей
+                                прогулки. Прогулка
+                                длится около 1 часа. Во время прогулки пассажиры наслаждаются видами моря и города.
+                                Звучит музыка для
+                                настроения и небольшой аудио рассказ об истории города на трех языках.Прогулки
+                                осуществляются
+                                круглогодично.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header fs-4 text-center">
+                            Памятка для посетителей (Каяк и вейкборды):
+                        </div>
+                        <div class="card-body">
+                            <p>
+                                Приходите к нам пораньше хотя бы за 10 минут до начала
+                                катания, чтобы успеть переодеться и получить инструктаж. Каяк в вашем полном
+                                распоряжении только на
+                                забронированные часы.
+                                <br>
+                                Берите с собой сменную одежду "Море - дело мокрое". Будьте готовы к легким брызгам. С
+                                вёсел при гребле
+                                капает вода, и за час катания ее собирается достаточно, чтобы намочить вашу одежду.Каяки
+                                сдаются по 100%
+                                предоплате. Мы вернем Вам деньги в случае форс-мажора(плохая погода), или если вы
+                                заранее (не менее чем
+                                за 3 часа) предупредите, что не сможете нас посетить.</br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <div class="booking position-relative">
+        <div class="gradi2"></div>
+        <div class="form-booking">
+            <form action="" class="fs-3 blur-5">
+                <div class="d-flex flex-row align-items-center justify-content-around">
+                    <div class="w-25 ">
+                        <label for="calendar" class="label-form text-center">Дата бронирования:</label>
+                        <div class="w-100 bg-light">
+                            <input class="mx-5 text-black" type="date" id="calendar">
+                        </div>
+                        
+                    </div>
+                    <div class="w-25 align-items-center">
+                        <label for="towns" class="label-form text-center">Города:   </label>
+                        <select id="towns" class="form-select fs-4">
+                            <option value="">Астана</option>
+                            <option value="">Актау</option>
+                            <option value="">Астана(Нұр-Сұлтан)</option>
+                            <option value="">Атырау</option>
+                            <option value="">Орал</option>
+                        </select>
+                    </div>
+                    <div class="w-25 flex-row align-items-center">
+                        <label for="types" class="label-form text-center">Услуги:</label>
+                        <select id="types" class="form-select fs-4">
+                            <option value="">Каяк</option>
+                            <option value="">Катание на катере</option>
+                            <option value="">Сапборды</option>
+                            <option value="">Гидроциклы</option>
+                            <option value="">Вейкборды</option>
+                            <option value="">Дайвинг</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <button class="btn btn-light fs-4"><p>Подтвердить</p></button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <div class="footer">
+        
+        <div class="phone">
+            <div class="help">
+                <p>Помощь без выходных:</p>
+            </div>
+            <div class="number">
+                <li><br>+7(708)-229-1365</br><br>+7(701)-513-5606</br><br>+7(777)-207-0707</br></li>
+            </div>
+            <div class="card">
+                <div class="opl">
+                    <p>Способ оплаты</p>
+                </div>
+                <div class="cards"><button class="cart"><img src="{% static 'main/img/MasterCard_logo.png'%}"
+                            width="135px" height="69px" alt=""></button>
+                    <button class="cart1"><img src="{% static 'main/img/PayPal_logo.png' %}" width="100px" height="48px"
+                            alt=""></button>
+                    <button class="cart2"><img src="{% static 'main/img/isa.png' %}" width="100px" height="58px"
+                            alt=""></button>
+                </div>
+            </div>
+            <div class="adress">
+                <div class="ima">Наш Адрес:<br>Иманова 17</br></div>
+                <div class="web"><button>Instagram</button>
+                    <button>Telegram</button>
+                    <button>What's App</button>
+                </div>
+            </div>
+            <div class="inf"><button>info@ticketsa.ru</button></div>
+        </div>
+    </div>
+</body>
+
+</html>
